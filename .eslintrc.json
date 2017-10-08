@@ -1,0 +1,19 @@
+{
+  "extends": [
+      "eslint:recommended",
+      "standard"
+  ],
+  "rules": {
+      "max-len": [2, 120, 4, {
+          "ignoreComments": true,
+          "ignoreUrls": true,
+          "ignorePattern": "^\\s*var\\s.+=\\s*require\\s*\\("
+      }],
+      "no-console": [
+          "error",
+          {
+              "allow": ["info", "warn", "error"] 
+          }
+      ]
+  }
+}
